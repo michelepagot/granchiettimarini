@@ -26,4 +26,15 @@ pub fn run(){
     for word in proverbio.split_whitespace(){
         print!("{} -- ", word);
     }
+
+    //creates string with capacity
+    println!("Capacity");
+    let mut sc = String::with_capacity(10);
+    sc.push('a');
+    println!("sc Capacity: {}bytes", sc.capacity());
+    sc.push('b');
+    sc.push('c'); 
+    sc.push('d');
+    println!("sc Capacity: {}bytes", sc.capacity());
+    
 }
