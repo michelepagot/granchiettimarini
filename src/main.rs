@@ -5,6 +5,12 @@ mod strings;
 mod tuples;
 mod arrays;
 mod vectors;
+mod conditional;
+mod loops;
+mod functions;
+mod pointers;
+mod structs;
+
 
 fn main() {
     println!("--------------- PRINT ---------------");
@@ -34,4 +40,24 @@ fn main() {
     println!("--------------- VECTORS ---------------");
     vectors::run();
     println!("------------- VECTORS DONE -------------");
+
+    println!("--------------- CONDITIONAL ---------------");
+    conditional::run();
+    println!("------------- CONDITIONAL DONE -------------");
+
+    println!("--------------- LOOPS ---------------");
+    loops::run();
+    println!("------------- LOOPS DONE -------------");
+
+    println!("--------------- FUNCTIONS ---------------");
+    functions::run();
+    println!("------------- FUNCTIONS DONE -------------");
+
+    println!("--------------- POINTERS ---------------");
+    pointers::run();
+    println!("------------- POINTERS DONE -------------");
+
+    println!("--------------- STRUCTS ---------------");
+    structs::run();
+    println!("------------- STRUCTS DONE -------------");
 }

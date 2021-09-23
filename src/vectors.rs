@@ -34,10 +34,16 @@ pub fn run(){
     numbers.pop();
     println!("Vector after a pop {:?}", numbers);
 
+    // Loop through elements
+    for x in numbers.iter() {
+        println!("--> {}", x);
+    }
+    
+    // Loop through elements and change them
     for x in numbers.iter_mut() {
         *x *= 2;
     }
 
-    println!("Numbers Vec: {:?}", numbers);
+    println!("Muted numbers Vec: {:?}", numbers);
 
 }
