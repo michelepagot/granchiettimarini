@@ -1,5 +1,5 @@
 pub fn run(){
-    let ciao = String::from("Ciao");
+    let ciao = "Ciao";
     let mut nome = String::from("Mici");
 
     println!("{} mondo", ciao);
@@ -13,9 +13,11 @@ pub fn run(){
     nome.push_str("_matto");
     println!("{} {}", ciao, nome);
 
-    println!("Capacity: {}bytes", ciao.capacity());
+    println!("Capacity of nome: {}bytes", nome.capacity());
+    nome.push_str("_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+    println!("Capacity of nome: {}bytes", nome.capacity());
 
-    println!("Is empty:{}", ciao.is_empty());
+    println!("Is empty of nome:{}", nome.is_empty());
 
     println!("'ciao' contains iao:{}", ciao.contains("iao"));
     println!("'ciao' contains bau:{}", ciao.contains("bau"));

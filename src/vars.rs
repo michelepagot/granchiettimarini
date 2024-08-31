@@ -2,7 +2,7 @@ pub fn run(){
     let name = "Micio";
     let mut age = 39;
     println!("My name is {} and I'm {}", name, age);
-    
+
     age = 40;
     println!("It is my birthday, I'm {}", age);
 

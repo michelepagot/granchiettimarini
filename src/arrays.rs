@@ -21,5 +21,4 @@ pub fn run(){
     println!("Slice: {:?}", slice);
     let partial_slice: &[i64] = &numbers[0..2];
     println!("Partial slice: {:?}", partial_slice);
-
 }
